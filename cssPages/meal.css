@@ -1,0 +1,296 @@
+:root{
+    --body-color:#FFFFFF;
+    --first-color:#000;
+    --second-color:#FF7D29;
+    font-family: "Kotta One", serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    width: 100svw;
+    max-width:100svw;
+    height: 100svh;
+    max-height:100svh;
+    background-color: var(--body-color);
+    font-family: "Kotta One", serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: var(--second-color);
+    box-sizing: border-box;
+}
+  
+.navbar-title {
+    margin-left: 10px;
+    color: var(--body-color);
+    font-family: "Pacifico", cursive;
+}
+
+.navbar-title h1 {
+font-size: 30px;
+color: var(--secondary-color);
+}
+
+.navbar-checkbox {
+display: none;
+}
+
+.navbar-menu-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+.navbar-menu-icon {
+width: 25px;
+height: 3px;
+background-color: var(--body-color);
+margin: 4px 0;
+}
+
+.navbar-menu {
+list-style: none;
+display: flex;
+gap: 40px;
+justify-content: center;
+flex-grow: 1;
+margin: 0;
+padding: 0;
+}
+
+.navbar-menu li {
+margin-right: 0;
+}
+.navbar-menu a {
+color: var(--body-color);
+text-decoration: none;
+font-size: 19px;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+.navbar-menu a:hover {
+
+font-size: 22px;
+}
+
+.login {
+padding: 8px 15px;
+background-color: var(--body-color);
+border: none;
+border-radius: 25px;
+color: var(--second-color);
+font-size: 18px;
+cursor: pointer;
+transition: all 0.3s ease;
+margin-left: 30px;
+font-family: "Kotta One", serif;
+}
+
+@media (max-width: 768px) {
+.navbar-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: var(--second-color);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.navbar-menu-toggle {
+    display: flex;
+}
+
+.navbar-checkbox:checked ~ .navbar-menu {
+    display: flex;
+}
+
+.navbar-menu a {
+    font-size: 18px;
+}
+
+.login {
+    display: none;
+}
+}
+
+section{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    padding: 0px 30px 50px 30px;
+}
+
+.section__div--img{
+    width: 35%;
+    height: 565px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.dishImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-attachment: contain;
+}
+
+.section__div--content{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.startContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startContent__div{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+    color: var(--second-color);
+}
+
+#startContent__div--icon{
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    border: 1px solid var(--second-color);
+}
+
+.rating i {
+    font-size: 20px;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating i.selected {
+    color: gold;
+}
+
+.ratingNumber{
+   margin-left: 15px; 
+   font-weight: bold;
+   font-size: 20px;
+   color: var(--second-color);
+}
+
+.ingredient__title{
+    margin-bottom: 20px;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.addToOrderBtn{
+    color: var(--body-color);
+    background-color: var(--second-color);
+    width: 160px;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: "Kotta One", serif;
+    border: 1px solid var(--second-color);
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section__div--img {
+        width: 100%;
+        height: auto; 
+        top: 10px;
+    }
+
+    .dishImage {
+        width: 100%;
+        height: 300px; 
+    }
+
+    .section__div--content {
+        width: 100%;
+        gap: 20px;
+        height: auto;
+    }
+
+    .startContent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rating i {
+        font-size: 16px;
+    }
+
+    .ratingNumber {
+        font-size: 18px;
+    }
+
+    .addToOrderBtn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .startContent__div {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    #startContent__div--icon {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .ingredient__title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    ol {
+        padding-left: 15px;
+    }
+}

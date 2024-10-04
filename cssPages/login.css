@@ -1,0 +1,117 @@
+
+:root {
+    --primary-color: #FF7D29;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    width: 100svw;
+    max-width:100svw;
+    height: 100svh;
+    max-height:100svh;
+    font-family: "Kotta One", serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.button{
+    background-color:var(--primary-color) ;
+    color:white;
+    border-radius:20px ;
+    width: 200px;
+    height: 50px;
+    border: var(--primary-color);
+    font-weight: bold;
+    font-family: "Kotta One", serif;
+    /* top: 10px; */
+
+}
+button:hover{
+    background-color:#bf560f;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    width:350px;
+    background-color:white ;
+    border-radius: 50px;
+    opacity: .6;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.background img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    top: 150px;
+    /* width:; */
+}
+
+
+.container--title{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    right: 10px;
+    bottom: 60px;
+
+}
+.container--div{
+   bottom: 40px;
+}
+
+.container--div--label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container--div--input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    border:2px solid black;
+    background-color: white;
+    
+    
+
+}
+
+input {
+    font-family: "Kotta One", serif;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    
+}
+
+h1{
+    z-index: 50;
+    font-family: "Kotta One", serif;
+    color: white;
+    font-size: 60px;
+    font-family: "Pacifico", cursive; 
+}
+

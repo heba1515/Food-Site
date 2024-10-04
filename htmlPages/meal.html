@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kotta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../cssPages/meal.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">
+                <h1>Foody</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="navbar-checkbox">
+            <label for="menu-toggle" class="navbar-menu-toggle">
+                <span class="navbar-menu-icon"></span>
+                <span class="navbar-menu-icon"></span>
+                <span class="navbar-menu-icon"></span>
+            </label>
+        
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../htmlPages/bestOffer.html">Best offer</a></li>
+                <li><a href="../htmlPages/menu.html">Menu</a></li>
+            </ul>
+            <button class="login" onclick=" document.location = '../htmlPages/login.html' ">Login</button>
+        </nav>
+    </header>
+<section>
+    <div class="section__div--img"></div>
+    <div class="section__div--content">
+        <div class="startContent">
+            <h2>Beef Wellington</h2>
+            <div class="startContent__div">
+                <i class="fa-regular fa-heart" id="startContent__div--icon"></i>
+                <p>add to wish list</p>
+            </div>
+        </div>
+        <div class="rating">
+            <i class="fa fa-star" data-value="1"></i>
+            <i class="fa fa-star" data-value="2"></i>
+            <i class="fa fa-star" data-value="3"></i>
+            <i class="fa fa-star" data-value="4"></i>
+            <i class="fa fa-star" data-value="5"></i>
+        </div>
+        <div class="ingredient">
+            <p class="ingredient__title"><b>Ingredient:</b></p>
+            <ol class="ingredientsList"></ol>
+        </div>
+        <button class="addToOrderBtn">Add To Order</button>
+    </div>
+</section>
+
+    <script src="../jsPages/meal.js"></script>
+</body>
+</html>

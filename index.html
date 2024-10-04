@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kotta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./cssPages/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">
+            <h1>Foody</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="navbar-checkbox">
+        <label for="menu-toggle" class="navbar-menu-toggle">
+            <span class="navbar-menu-icon"></span>
+            <span class="navbar-menu-icon"></span>
+            <span class="navbar-menu-icon"></span>
+        </label>
+
+        <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./htmlPages/bestOffer.html">Best offer</a></li>
+            <li><a href="./htmlPages/menu.html">Menu</a></li>
+        </ul>
+        <button onclick=" document.location = './htmlPages/login.html' ">Login</button>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="home">
+                <div class="home__info">
+                    <h2 class="home__title">Taste Flavors from <br> Around the <br>World...</h2>
+                    <div class="home__description">Foody House Kitchen: Where culinary excellence meets a symphony of
+                        flavors, creating a harmonious dining experience for every palate.</div>
+                </div>
+                <div class="images">
+                    <div class="home__image1"><img src="./images/6048688437248246762.jpg" alt=""></div>
+                    <div class="home__image2"><img src="./images/6048688437248246764.jpg" alt=""></div>
+                    <div class="home__image3"><img src="./images/6048688437248246664.jpg" alt=""></div>
+                    <div class="home__image4"><img src="./images/6048688437248246666.jpg" alt=""></div>
+                </div>
+            </div>
+            <hr>
+            <div class="popular">
+                <h3 class="popular__title">popular dishes</h3>
+                <div class="main">
+                    <div class="recipes">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./jsPages/home.js"></script>
+</body>
+
+</html>
